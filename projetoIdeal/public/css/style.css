@@ -1,20 +1,50 @@
 *{
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 /*Header*/
+#setColor-orange{
+color: #ffc200;
+}
+
 .style-nav-logo{
-    font-size: 35px;
+    font-size: 30px;
 }
 #setColor-orange{
     color: #ffc200;
 }
-.style-nav-li{
-    font-size: 25px;
-    padding: 10px;
+.nav-link{
+    font-size: 20px;
     color: #fff
 }
-.style-nav-li:hover{
+.nav-link:hover{
     color: #ffc200;
 }
+
+
+
+/*Content*/
+
 /*Footer*/
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #343A40;
+    color: #fff;
+}
+.cardContainer{
+    background-color: #343A40;
+}
+.cardLink{
+    margin-left: 10px;
+}
+.cardTitle{
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+.texto-equipe{
+    margin-top: 30px;
+    margin-left: 70px;
+    color: rgb(133, 133, 133);
+}
