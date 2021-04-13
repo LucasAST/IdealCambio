@@ -16,10 +16,12 @@
   <!-- FavIcon -->
   <link rel="shortcut icon" href="#" type="image/x-icon">
 
+  <!-- JQuery -->
+  <script type="text/javascript" src="public/js/jquery-3.6.0.min.js"></script>
 
-
-  <!-- JavaScript -->
-  <script src=""></script>
+  <!-- JavaScript Rolagem e Banner -->
+  <script type="text/javascript" src="public/js/scroll.js"></script>
+  <script type="text/javascript" src="public/js/banner.js"></script>
 
   <title>Ideal Câmbio e Turismo</title>
 </head>
@@ -65,22 +67,15 @@
               <input type="number" class="form-control my-3" placeholder="Idade" aria-label="Idade"
                 aria-describedby="addon-wrapping">
             </div>
-            <select class="custom-select mb-3" id="inputGroupSelect04" aria-label="Example select with button addon">
-              <option selected>Acompanhantes</option>
-              <option value="1">Sozinho</option>
-              <option value="2">Duas pessoas</option>
-              <option value="3">Três pessoas</option>
-              <option value="3">Mais de 3 pessoas</option>
-            </select>
             <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-              <option selected>Tipo de viagem</option>
+              <option disabled="disabled" selected>Tipo de serviço</option>
               <option value="1">Trabalho</option>
               <option value="2">Turismo</option>
-              <option value="3">Urgências</option>
+              <option value="3">Compra/Venda</option>
               <option value="3">Outros</option>
             </select>
             <select class="custom-select my-3" id="inputGroupSelect04" aria-label="Example select with button addon">
-              <option selected>Moeda</option>
+              <option disabled="disabled" selected>Moeda</option>
               <option value="1">Dólar</option>
               <option value="1">Dólar Canadense</option>
               <option value="1">Dólar Australiano</option>
@@ -92,7 +87,7 @@
             </select>
             <div class="row justify-content-center">
               <button type="button" class="btn btn-lg btn-success">
-                  Começar
+                Começar
                 <img src="public/assets/img/icon/bg-tbn.png" width="25px">
               </button>
             </div>
@@ -102,8 +97,63 @@
       </div>
     </article>
 
-  </section>
-  <!--CONTAINER END-->
+    <aside class="row aside">
+      <div id="banner_popup" title="Navegacao">
+        <a href="#cabecalho" class="scroll">
+          <div id="BotaoScroll" style="margin: 3px;" title="Ir para Cabeçalho"></div>
+        </a>
+      </div>
+      <script language="JavaScript">
+        if (document.getElementById("banner_popup")) abre_banner();
+      </script>
+    </aside>
+
+    <article class="row  my-5">
+      <div class="col-md-4">
+        <p class="texto-content ml-2 ">
+          Acompanhe em tempo real
+        </p>
+        <div class="dropdown ml-5">
+          <button class="btn btn-warning dropdown-toggle btn-lg ml-3" type="button" id="dropdownMenu2"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Moedas em tempo real
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">
+              <a href="https://mercadocotacao.com/dolar-hoje/" id="USD" title="Cotação do Dólar Americano Hoje"
+                name="mercado_cotacao">Dólar Hoje</a>
+              <script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+            </button>
+            <button class="dropdown-item" type="button">
+              <a href="https://mercadocotacao.com/peso-argentino-hoje/" id="ARS" title="Cotação do Peso Argentino Hoje"
+                name="mercado_cotacao">Peso Hoje</a>
+              <script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+            </button>
+            <button class="dropdown-item" type="button">
+              <a href="https://mercadocotacao.com/libra-esterlina-hoje/" id="GBP" title="Cotação da Libra Esterlina Hoje"
+                name="mercado_cotacao">Libra Hoje</a>
+              <script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+            </button>
+            <button class="dropdown-item" type="button">
+              <a href="https://mercadocotacao.com/euro-hoje/" id="EUR" title="Cotação do Euro Hoje"
+                name="mercado_cotacao">Euro Hoje</a>
+              <script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img src="public/assets/img/3209420-512.png" class="img-fluid">
+      </div>
+      <div class="col-md-3 align-self-end">
+        <p class="texto-content">
+          Orçamento rápido e seguro
+        </p><br>
+      </div>
+    </article>
+
+
+  </section><!--CONTAINER END-->
 
   <footer class="footer">
     <div class="cardContainer">
