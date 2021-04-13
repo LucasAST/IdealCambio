@@ -22,9 +22,23 @@ color: #ffc200;
     color: #ffc200;
 }
 
-
-
 /*Content*/
+.banner{
+    background-image: url(../assets/img/canvas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.texto-maior{
+    font-size: 60px;
+}
+.texto-p{
+    font-size: 30px;
+}
+.cover-btn{
+    background-image: url(../assets/img/icon/iconfinder_social_media_btn_bg.png);
+    background-position: 50px;
+}
 
 /*Footer*/
 .footer{
