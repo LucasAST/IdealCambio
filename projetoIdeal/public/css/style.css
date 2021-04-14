@@ -26,9 +26,16 @@ color: #ffc200;
     background-image: url(../assets/img/canvas.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .texto-maior{
     font-size: 60px;
+}
+.bg-sobre{
+    background-image: url(../assets/img//bg-sobre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .texto-p{
     font-size: 30px;
@@ -36,15 +43,35 @@ color: #ffc200;
 .texto-content{
     font-size: 35px;
 }
+.texto-content-s{
+    font-size: 55px;
+}
+
+.hover-tip:hover{
+    z-index: 1 ;
+    transform:  scale(1.1);
+    transition:  all 2s;
+}
+.cambio-align{
+    margin-top: 130px;
+    margin-bottom: 150px;
+}
+.business{
+    background-image: url(../assets/img/canvas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.texto-serv{
+    font-size: 30px;
+}
+
 /*ASIDE*/
 div#BotaoScroll {
     background-image: url("../assets/img/icon/seta.png");
     width: 1000px;
     height: 42px;
-    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 5px -35px rgba(0, 0, 0, 0.5);
-    border-radius: 22px 22px 22px 22px;
+    border-radius: 30px 30px 30px 30px;
   }
   aside#BotaoScroll:hover {
     box-shadow: 1px 2px 6px rgba(182, 82, 82, 0.53);

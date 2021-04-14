@@ -1,33 +1,197 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSS Page -->
-    <link rel="stylesheet" href="../css/style.css">
+  <!-- JQuery -->
+  <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
 
-    <!-- FavIcon -->
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <!-- JavaScript -->
-    <script src=""></script>
-
-    <title>Sobre Ideal</title>
-  </head>
-  <body>
-    
-
-    
+  <!-- CSS-->
+  <link rel="stylesheet" href="../css/style.css">
 
 
+  <!-- FavIcon -->
+  <link rel="shortcut icon" href="../assets/img/icon/favicon.png" type="image/x-icon">
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  </body>
+  <!--JavaScript Toggle-->
+  <script src="../js/toggle.js"></script>
+
+  <title>Ideal Câmbio e Turismo</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark">
+    <a class="navbar-brand text-white style-nav-logo" href="../../index.html">
+      <span id="setColor-orange">IDEAL CÂMBIO</span>
+      E TURISMO
+    </a>
+    <!--NavBar-->
+    <ul class="navbar-nav ml-4">
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/sobre.html">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/serviços.html">Serviços</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/contato.html">Contato</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="container-fluid">
+
+    <article>
+      <div class="row justify-content-center  bg-sobre">
+        <div class="col-md-9 mr-3 ml-5">
+          <p class="texto-maior font-weight-bold">Conheça um pouco mais sobre nosso trabalho</p>
+        </div>
+      </div>
+    </article><br><br><br><br>
+
+    <article>
+      <div class="row justify-content-center bg-sobre mx-5">
+        <div class="col-md-3 mr-3 ml-5">
+          <p class="texto-content font-weight-bold">Nossa tragetória</p>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-sobre mb-2 mx-5">
+        <div class="col-md-2">
+          <a href="#" id="btnToggleOne">
+            <img src="../assets/img/icon/toggle.png" class="img-fluid ml-5 mb-3" width="80px">
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-sobre mx-5">
+        <div class="col-md-10 texto-p" id="toggleOne">
+          Criada em meados de fevereiro de 2019, a Ideal Câmbio e Turismo, nasceu com o intuito oferecer a você,
+          cliente, um serviço de excelência com toda a credibilidade, segurança e confiança que você merece.
+        </div>
+      </div>
+    </article><br>
+
+    <article>
+      <div class="row justify-content-center bg-sobre mx-5">
+        <div class="col-md-3 mr-3 ml-5">
+          <p class="texto-content font-weight-bold">Nossos parceiros</p>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-sobre mb-2 mx-5">
+        <div class="col-md-2">
+          <a href="#" id="btnToggleTwo">
+            <img src="../assets/img/icon/toggle.png" class="img-fluid ml-5 mb-3" id="toggleMore" width="80px">
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-sobre mx-5">
+        <div class="col-md-10 texto-p" id="toggleTwo">
+          Somos correspondentes cambial do Banco Daycoval, um banco com as melhores opções de crédito,
+          investimentos e serviços de câmbio para você e sua empresa. Além disso, somos
+          devidamente autorizada pelo Banco Central do Brasil a operacionalizar no mercado Câmbial de Fortaleza.
+        </div>
+      </div>
+    </article><br>
+
+    <article>
+      <div class="row justify-content-center bg-sobre mx-5">
+        <div class="col-md-3 mr-5 ml-3">
+          <p class="texto-content font-weight-bold">Atuação no mercado</p>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-sobre mb-2 mx-5">
+        <div class="col-md-2">
+          <a href="#" id="btnToggleThree">
+            <img src="../assets/img/icon/toggle.png" class="img-fluid ml-5 mb-3" id="toggleMore" width="80px">
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-sobre mx-5">
+        <div class="col-md-10 texto-p" id="toggleThree">A Ideal Câmbio e Turismo, dispõe também de um serviço personalizado e
+          eficaz, com operações tanto em loja física
+          que oferece toda estrutura, acolhendo o cliente em ambiente seguro e climatizado, tornando assim sua
+          experiência
+          agradável e satisfatória. Quanto dispomos também do serviço de DELIVERY, que vem a tranquilizar mais ainda os
+          cliente que temem sair de nossas lojas com o seu dinheiro em mãos, pois podemos proporcionar aos mesmos sua
+          operação no conforto de sua casa, trabalho etc.</div>
+      </div>
+    </article><br>
+
+    <article>
+      <div class="row justify-content-center bg-sobre mx-5">
+        <div class="col-md-3 ml-5">
+          <p class="texto-content font-weight-bold">Nossa equipe IDEAL</p>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-sobre mb-2 mx-5">
+        <div class="col-md-2">
+          <a href="#" id="btnToggleFour">
+            <img src="../assets/img/icon/toggle.png" class="img-fluid ml-5 mb-3" id="toggleMore" width="80px">
+          </a>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-sobre mx-5">
+        <div class="col-md-10 texto-p" id="toggleFour">
+          Contando sempre com uma equipe altamente preparada e sempre disposta a oferecer a você o melhor atendimento,
+          somos conhecidos pelos nossos clientes, como uma referência de atendimento. Estamos sempre a postos para sanar
+          todas as suas dúvidas sobre seguro de viagens, chips internacionais, câmbio comercial, remessas financeiras,
+          transferências internacionais ou até mesmo sobre operações cambiais como compra e vendas de moedas,
+          satisfazendo
+          assim, todas as suas necessidades.
+        </div>
+      </div>
+    </article><br><br><br><br><br><br>
+
+  </section>
+  <!--CONTAINER END-->
+  <footer class="footer">
+    <div class="cardContainer">
+      <div class="cardCorpo">
+        <h5 class="cardTitle"><span id="setColor-orange">IDEAL CÂMBIO</span>
+          E TURISMO</h5>
+        <ul class="cardText">
+          <li>
+            <span>
+              <img src="../assets/img/icon/211854-24.png">
+            </span>
+            Av. Monsenhor Tabosa, 1313, Loja 4 - Centro
+          </li>
+          <li>
+            <span>
+              <img src="../assets/img/icon/1608790-24.png">
+            </span>
+            (85) 3035-3637
+          </li>
+        </ul>
+        <a class="cardLink" href="#">
+          <img src="../assets/img/icon/1964400-128fb.png">
+        </a>
+        <a class="cardLink" href="#">
+          <img src="../assets/img/icon/1964411-128insta.png">
+        </a>
+        <a class="cardLink" href="#">
+          <img src="../assets/img/icon/1964402-128wpp.png">
+        </a>
+      </div>
+      <div class="texto-equipe">
+        Lucas Silva - SoulCode Academy 2021 ©
+      </div>
+    </div>
+  </footer>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

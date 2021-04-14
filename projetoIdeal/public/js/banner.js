@@ -11,6 +11,6 @@ function abre_banner()
    banner_obj.style.height = '60px';
    banner_obj.style.styleFloat = 'right';
    banner_obj.style.zIndex = '500';
-   banner_obj.style.borderRadius  = '4px 0px 0px 4px';
+   banner_obj.style.borderRadius  = '10px 0px 0px 10px';
    banner_obj.style.MozBorderRadius   = '4px 0px 0px 4px';
 }
