@@ -73,15 +73,6 @@ div#BotaoScroll {
     height: 42px;
     border-radius: 30px 30px 30px 30px;
   }
-  aside#BotaoScroll:hover {
-    box-shadow: 1px 2px 6px rgba(182, 82, 82, 0.53);
-    -moz-box-shadow: 1px 2px 6px rgba(182, 82, 82, 0.53);
-    -webkit-box-shadow: 0px 5px -35px rgba(182, 82, 82, 0.53);
-    -webkit-transition: 0.3s ease-in;
-    -moz-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
-    transition: 0.3s ease-in;
-  }
 /*Footer*/
 .footer{
     display: flex;
@@ -93,11 +84,15 @@ div#BotaoScroll {
     background-color: #343A40;
 }
 .cardLink{
-    margin-left: 10px;
+    margin-left: 60px;
 }
 .cardTitle{
     margin-left: 70px;
     margin-bottom: 30px;
+    margin-top: 10px;
+}
+.cardText{
+    margin-left: 50px;
 }
 .texto-equipe{
     margin-top: 30px;

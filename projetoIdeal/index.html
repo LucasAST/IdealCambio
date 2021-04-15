@@ -1,6 +1,26 @@
 <!doctype html>
 <html lang="pt-br">
 
+<!-- Req 
+  JQuery scroll top: public > js > scroll (linhas 108 <aside>)
+
+  JS CNPJ: public > pages > contato  (linha 84)
+           public > js > validador
+  
+  Footer CSS: public > css > style.css (linha 76) 
+              index (linha 251)    
+
+  Article Aside (linha 64 - linha 108) 
+  
+  Dropdowm: (linha 192)
+
+  Btn com estilo: public > pages > contato (linha 133) 
+
+  4 páginas - Cores Amarelo (tons váriados), Branco, Preto
+
+  Ideias do Cliente: Dropdown com cotação real, mais informações no form index (linha 92), deixar claro que se trabalha com
+  mais de um tipo de moeda, e tipos de cartão internacional 
+-->
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -18,7 +38,7 @@
 
 
   <!-- FavIcon -->
-  <link rel="shortcut icon" href="public/assets/img/icon/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="public/assets/img/icon/favicons.png" type="image/x-icon">
 
  
 
@@ -89,10 +109,12 @@
               <option value="3">Outra</option>
             </select>
             <div class="row justify-content-center">
+              <a href="https://api.whatsapp.com/send?phone=5585981268049">
               <button type="button" class="btn btn-lg btn-success">
                 Começar
                 <img src="public/assets/img/icon/bg-tbn.png" width="25px">
               </button>
+            </a>
             </div>
           </div>
         </div>
@@ -111,8 +133,6 @@
         if (document.getElementById("banner_popup")) abre_banner();
       </script>
     </aside>
-
-
 
     <article>
       <div class="row mt-5 justify-content-center">
@@ -168,15 +188,15 @@
     </article><br><br><br><br>
 
     <div class="cambio-align">
-    <div class="row justify-content-center">
-      <p class="texto-content ml-2">
+    <div class="row justify-content-center bg-light ">
+      <p class="texto-content ml-2 mt-5">
         Acompanhe moedas em tempo real
       </p>
     </div>
 
-    <article class="row mb-5 justify-content-center">
+    <article class="row mb-5 justify-content-center bg-light ">
       <div class="col-md-2">
-        <div class="dropdown">
+        <div class="dropdown mb-5">
           <!--DROPDOWN-->
           <button class="btn btn-warning dropdown-toggle btn-lg ml-3" type="button" id="dropdownMenu2"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -216,7 +236,7 @@
     <article>
       <div class="row mb-5 business justify-content-center">
         <div class="col-sm-2 my-5">
-            <h4  class="ml-5 font-weight-bold">Disconto na compra de seguro</h4><br>
+            <h4  class="ml-5 font-weight-bold">Desconto na compra de seguro</h4><br>
             <img src="public/assets/img/2075801-128.png" class="img-fluid ml-5"> 
         </div>
         <div class="col-sm-2 my-5">
@@ -232,13 +252,75 @@
           <img src="public/assets/img/3338972-128.png" class="img-fluid ml-5 "> 
         </div>
       </div>
-    </article>
-    
-    
+    </article><br><br><br>
+
+    <article >
+      <div class="row mt-5 justify-content-center ">
+        <p class="texto-content ">
+            Nossos parceiros
+        </p>
+      </div>
+
+      <div class="row my-5 ml-5 ">
+        <div class="col-md-2 ">
+          <a href="public/pages/serviços.html">
+            <div class="card mb-3 hover-tip " style="width: 15rem; height: 10rem;">
+              <div class="card-body">
+                <img src="public/assets/img/wu.png" class="card-img-top mt-4" alt="western union">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://www.lycamobile.pt/por/">
+            <div class="card mb-3 hover-tip" style="width: 15rem; height: 10rem;">
+              <div class="card-body">
+                <img src="public/assets/img/unnamed.png" class="card-img-top" alt="lyca mobile">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2 ">
+          <a href="https://www.travelace.com.br/">
+            <div class="card mb-3 hover-tip" style="width: 15rem; height: 10rem;">  
+              <div class="card-body">
+                <img src="public/assets/img/logo-travelace-alta.png" class="card-img-top mt-3" alt="travel ace">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://www.daycoval.com.br/">
+            <div class="card mb-3 hover-tip" style="width: 15rem; height: 10rem;">
+              <div class="card-body">
+                <img src="public/assets/img/daycoval.png" class="card-img-top" alt="banco daycoval">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://www.multicurrencycashpassport.com">
+            <div class="card mb-3 hover-tip" style="width: 15rem; height: 10rem;">
+              <div class="card-body">
+                <img src="public/assets/img/multi_moeda_logo_colour.png" class="card-img-top" alt="cash passport">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2">
+          <a href="https://www.multicurrencycashpassport.com">
+            <div class="card mb-3 hover-tip" style="width: 15rem; height: 10rem;">
+              <div class="card-body">
+                <img src="public/assets/img//scacademy.png" class="card-img-top" alt="soulcode academy">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </article><br><br><br><br>
 
   </section>
   <!--CONTAINER END-->
-
   <footer class="footer">
     <div class="cardContainer">
       <div class="cardCorpo">
@@ -258,14 +340,14 @@
             (85) 3035-3637
           </li>
         </ul>
-        <a class="cardLink" href="#">
-          <img src="public/assets/img/icon/1964400-128fb.png">
+        <a class="cardLink" href="https://www.facebook.com/Ideal-C%C3%A2mbio-e-Turismo-353742515383819/">
+          <img src="public/assets/img/icon/1964400-128fb.png" width="60px">
         </a>
-        <a class="cardLink" href="#">
-          <img src="public/assets/img/icon/1964411-128insta.png">
+        <a class="cardLink" href="https://www.instagram.com/idealcambio/">
+          <img src="public/assets/img/icon/1964411-128insta.png" width="60px">
         </a>
-        <a class="cardLink" href="#">
-          <img src="public/assets/img/icon/1964402-128wpp.png">
+        <a class="cardLink" href="https://api.whatsapp.com/send?phone=5585981268049">
+          <img src="public/assets/img/icon/1964402-128wpp.png" width="60px">
         </a>
       </div>
       <div class="texto-equipe">

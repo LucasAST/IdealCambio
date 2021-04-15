@@ -1,9 +1,8 @@
 function validarCNPJ(el) {
     if (!_cnpj(el.value)) {
 
-        alert("CNPJ - inválido!" + el.value);
+        alert("CNPJ " + " " +  " inválido!" +" "+ el.value);
 
-        
         el.value = "";
     }
 }
