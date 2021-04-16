@@ -1,9 +1,14 @@
 function validarCNPJ(el) {
     if (!_cnpj(el.value)) {
 
-        alert("CNPJ " + " " +  " inválido!" +" "+ el.value);
+        document.getElementById('inputCnpj').className = 'fail'
 
         el.value = "";
+        
+    }else{
+
+        document.getElementById('inputCnpj').className = 'success'
+
     }
 }
 
